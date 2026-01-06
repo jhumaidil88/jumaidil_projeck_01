@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Warung </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-box">
+    <h2>Silahkan Login</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+    <p id="pesan"></p>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Warung Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🍽️WARUNG ONLINE</h1>
+
+<div class="menu">
+    <h2>DAFTAR MENU</h2>
+
+    <div class="item">
+        <h3>Nasi Kuning</h3>
+        <ol>
+            <li>Reguler - 7.000
+                <input type="number" id="reguler" value="0" min="0">
+            </li>
+            <li>Medium - 10.000
+                <input type="number" id="medium"  value="0" min="0">
+            </li>
+            <li>Komplit - 12.000
+                <input type="number" id="komplit" value="0" min="0">
+            </li>
+            <li>Jumbo - 15.000
+                <input type="number" id="jumbo" value="0" min="0">
+            </li>
+        </ol>
+    </div>
+
+    <div class="item">
+        <h3>Menu Tambahan</h3>
+        <ol>
+            <li>Mie Ayam - 12.000
+                <input type="number" id="mie" value="0" min="0">
+            </li>
+            <li>Es Teh - 5000
+                <input type="number" id="Teh" value="0" min="0">
+            </li>
+        </ol>
+    </div>
+
+    <button onclick="hitung()">Pesan Sekarang</button>
+</div>
+
+<div class="hasil">
+    <h2>Total Bayar:</h2>
+    <p id="total">Rp0</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
